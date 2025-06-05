@@ -110,7 +110,7 @@ def main():
         # ----------------------------------------------------------------------
         cv2.imshow("Live + ASCII", combined)
 
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        if (cv2.waitKey(1) & 0xFF) == ord('q'):
             break
 
     cap.release()
